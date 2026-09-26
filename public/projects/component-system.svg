@@ -1,0 +1,122 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="16" fill="#0C1017" />
+  
+  <defs>
+    <pattern id="grid-comp" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1A202C" stroke-width="0.8" opacity="0.6" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#grid-comp)" />
+
+  <!-- App Header / Window Bar -->
+  <rect x="24" y="24" width="752" height="452" rx="12" fill="#111827" stroke="#1F2937" stroke-width="1.5" />
+  
+  <!-- Window Controls -->
+  <circle cx="50" cy="46" r="5" fill="#EF4444" opacity="0.8"/>
+  <circle cx="66" cy="46" r="5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="82" cy="46" r="5" fill="#10B981" opacity="0.8"/>
+  
+  <rect x="120" y="38" width="230" height="16" rx="4" fill="#1F2937" />
+  <text x="130" y="50" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">ui-components.dev / atomic-design</text>
+  
+  <rect x="650" y="36" width="110" height="20" rx="10" fill="#1F2937" />
+  <text x="662" y="50" font-family="system-ui, sans-serif" font-size="9" fill="#60A5FA" font-weight="600">TypeScript 5.x Ready</text>
+
+  <line x1="25" y1="68" x2="775" y2="68" stroke="#1F2937" stroke-width="1" />
+
+  <!-- Showcase Content -->
+  <text x="44" y="96" font-family="system-ui, sans-serif" font-size="15" fill="#F9FAFB" font-weight="700">Atomic Component Library &amp; Design Primitives</text>
+  <text x="44" y="114" font-family="system-ui, sans-serif" font-size="11" fill="#9CA3AF">Accessible, typed React 19 components styled with Tailwind CSS &amp; CSS variables</text>
+
+  <!-- Component Card 1: Buttons & Badges -->
+  <rect x="44" y="134" width="226" height="310" rx="8" fill="#161F30" stroke="#1F2937" />
+  <text x="60" y="160" font-family="system-ui, sans-serif" font-size="12" fill="#F3F4F6" font-weight="600">Button &amp; Badge Variants</text>
+  
+  <rect x="60" y="180" width="194" height="34" rx="6" fill="#2563EB" />
+  <text x="126" y="202" font-family="system-ui, sans-serif" font-size="11" fill="#FFFFFF" font-weight="600">Primary Button</text>
+  
+  <rect x="60" y="226" width="194" height="34" rx="6" fill="#1F2937" stroke="#374151" />
+  <text x="122" y="248" font-family="system-ui, sans-serif" font-size="11" fill="#E5E7EB" font-weight="500">Secondary Outline</text>
+
+  <rect x="60" y="272" width="194" height="34" rx="6" fill="#DC2626" />
+  <text x="124" y="294" font-family="system-ui, sans-serif" font-size="11" fill="#FFFFFF" font-weight="600">Destructive Action</text>
+
+  <line x1="60" y1="324" x2="254" y2="324" stroke="#1F2937" />
+  <text x="60" y="348" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">STATUS BADGES</text>
+  
+  <rect x="60" y="360" width="80" height="22" rx="11" fill="#10B981" fill-opacity="0.15" stroke="#10B981" stroke-width="0.5" />
+  <text x="74" y="375" font-family="system-ui, sans-serif" font-size="10" fill="#34D399" font-weight="600">● Active</text>
+
+  <rect x="150" y="360" width="80" height="22" rx="11" fill="#8B5CF6" fill-opacity="0.15" stroke="#8B5CF6" stroke-width="0.5" />
+  <text x="164" y="375" font-family="system-ui, sans-serif" font-size="10" fill="#A78BFA" font-weight="600">★ Featured</text>
+
+  <rect x="60" y="394" width="80" height="22" rx="11" fill="#F59E0B" fill-opacity="0.15" stroke="#F59E0B" stroke-width="0.5" />
+  <text x="74" y="409" font-family="system-ui, sans-serif" font-size="10" fill="#FBBF24" font-weight="600">⏳ Pending</text>
+
+  <rect x="150" y="394" width="80" height="22" rx="11" fill="#3B82F6" fill-opacity="0.15" stroke="#3B82F6" stroke-width="0.5" />
+  <text x="162" y="409" font-family="system-ui, sans-serif" font-size="10" fill="#60A5FA" font-weight="600">✓ Verified</text>
+
+  <!-- Component Card 2: Interactive Card / Form -->
+  <rect x="286" y="134" width="226" height="310" rx="8" fill="#161F30" stroke="#1F2937" />
+  <text x="302" y="160" font-family="system-ui, sans-serif" font-size="12" fill="#F3F4F6" font-weight="600">Form Controls &amp; Inputs</text>
+  
+  <text x="302" y="188" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">EMAIL ADDRESS</text>
+  <rect x="302" y="196" width="194" height="32" rx="6" fill="#0F172A" stroke="#3B82F6" />
+  <text x="314" y="216" font-family="system-ui, sans-serif" font-size="10" fill="#F3F4F6">developer@company.com</text>
+
+  <text x="302" y="248" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">ROLE SELECT</text>
+  <rect x="302" y="256" width="194" height="32" rx="6" fill="#0F172A" stroke="#374151" />
+  <text x="314" y="276" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">Frontend Engineer ▾</text>
+
+  <text x="302" y="308" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">TOGGLE SWITCHES</text>
+  
+  <!-- Switch 1 -->
+  <rect x="302" y="324" width="36" height="20" rx="10" fill="#2563EB" />
+  <circle cx="326" cy="334" r="8" fill="#FFFFFF" />
+  <text x="348" y="338" font-family="system-ui, sans-serif" font-size="10" fill="#E5E7EB">Dark Theme</text>
+
+  <!-- Switch 2 -->
+  <rect x="302" y="356" width="36" height="20" rx="10" fill="#2563EB" />
+  <circle cx="326" cy="366" r="8" fill="#FFFFFF" />
+  <text x="348" y="370" font-family="system-ui, sans-serif" font-size="10" fill="#E5E7EB">Strict Typecheck</text>
+
+  <!-- Switch 3 -->
+  <rect x="302" y="388" width="36" height="20" rx="10" fill="#374151" />
+  <circle cx="312" cy="398" r="8" fill="#FFFFFF" />
+  <text x="348" y="402" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">Sound FX</text>
+
+  <!-- Component Card 3: Code Snippet Card -->
+  <rect x="528" y="134" width="226" height="310" rx="8" fill="#0F172A" stroke="#1F2937" />
+  <rect x="528" y="134" width="226" height="30" rx="8 8 0 0" fill="#1E293B" />
+  <text x="542" y="154" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">Button.tsx</text>
+  <rect x="710" y="142" width="30" height="14" rx="3" fill="#374151" />
+  <text x="716" y="152" font-family="system-ui, sans-serif" font-size="8" fill="#D1D5DB">TSX</text>
+
+  <text x="542" y="184" font-family="monospace" font-size="10" fill="#60A5FA">interface</text>
+  <text x="600" y="184" font-family="monospace" font-size="10" fill="#FBBF24">ButtonProps</text>
+  <text x="670" y="184" font-family="monospace" font-size="10" fill="#F3F4F6">{</text>
+  
+  <text x="552" y="204" font-family="monospace" font-size="9" fill="#E5E7EB">variant?:</text>
+  <text x="604" y="204" font-family="monospace" font-size="9" fill="#34D399">'default'</text>
+  <text x="654" y="204" font-family="monospace" font-size="9" fill="#9CA3AF">|</text>
+  <text x="562" y="220" font-family="monospace" font-size="9" fill="#34D399">'outline'</text>
+  <text x="612" y="220" font-family="monospace" font-size="9" fill="#9CA3AF">|</text>
+  <text x="622" y="220" font-family="monospace" font-size="9" fill="#34D399">'ghost'</text>
+
+  <text x="552" y="244" font-family="monospace" font-size="9" fill="#E5E7EB">size?:</text>
+  <text x="590" y="244" font-family="monospace" font-size="9" fill="#34D399">'sm'</text>
+  <text x="616" y="244" font-family="monospace" font-size="9" fill="#9CA3AF">|</text>
+  <text x="626" y="244" font-family="monospace" font-size="9" fill="#34D399">'lg'</text>
+
+  <text x="552" y="268" font-family="monospace" font-size="9" fill="#E5E7EB">isLoading?:</text>
+  <text x="626" y="268" font-family="monospace" font-size="9" fill="#60A5FA">boolean</text>
+
+  <text x="542" y="292" font-family="monospace" font-size="10" fill="#F3F4F6">}</text>
+
+  <rect x="542" y="320" width="198" height="100" rx="6" fill="#161F30" stroke="#1F2937" />
+  <text x="554" y="344" font-family="system-ui, sans-serif" font-size="10" fill="#9CA3AF">ACCESSIBILITY AUDIT</text>
+  <text x="554" y="368" font-family="system-ui, sans-serif" font-size="16" fill="#34D399" font-weight="700">100 / 100</text>
+  <text x="554" y="388" font-family="system-ui, sans-serif" font-size="9" fill="#9CA3AF">WCAG 2.1 AA Compliant</text>
+  <text x="554" y="404" font-family="system-ui, sans-serif" font-size="9" fill="#60A5FA">Keyboard navigable</text>
+</svg>
