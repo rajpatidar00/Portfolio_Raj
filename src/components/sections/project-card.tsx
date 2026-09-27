@@ -16,16 +16,10 @@ interface ProjectCardProps {
 export function ProjectCard({ project, index }: ProjectCardProps) {
   const [showNotice, setShowNotice] = React.useState(false);
 
-  const handlePlaceholderClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setShowNotice(true);
-    setTimeout(() => setShowNotice(false), 3000);
-  };
-
   return (
     <div className="group rounded-2xl border border-slate-200/90 dark:border-slate-800/90 bg-white/90 dark:bg-slate-900/60 shadow-sm hover:shadow-xl hover:border-slate-300 dark:hover:border-slate-700 transition-all duration-300 overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
-        
+
         {/* Project Preview Image Column */}
         <div className="lg:col-span-6 relative bg-slate-950 p-4 sm:p-6 flex items-center justify-center overflow-hidden border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-800">
           <div className="relative w-full aspect-[16/10] rounded-xl overflow-hidden shadow-2xl border border-slate-800 group-hover:scale-[1.02] transition-transform duration-300">
@@ -53,7 +47,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         {/* Project Details Column */}
         <div className="lg:col-span-6 p-6 sm:p-8 flex flex-col justify-between space-y-6">
           <div className="space-y-4">
-            
+
             {/* Tagline / Placeholder badge */}
             <div className="flex items-center gap-2 flex-wrap">
               {project.isPlaceholder ? (
@@ -120,24 +114,28 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           <div className="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-3">
               {/* GitHub Button */}
-              <button
-                onClick={handlePlaceholderClick}
+              <a
+                href={project.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors shadow-xs cursor-pointer"
                 title="View Code Repository"
               >
                 <GithubIcon className="h-3.5 w-3.5" />
                 GitHub
-              </button>
+              </a>
 
               {/* Live Demo Button */}
-              <button
-                onClick={handlePlaceholderClick}
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-xs shadow-blue-500/10 cursor-pointer"
                 title="Open Live Application"
               >
                 <ExternalLink className="h-3.5 w-3.5" />
                 Live Demo
-              </button>
+              </a>
             </div>
 
             <span className="text-[11px] font-mono text-slate-400 dark:text-slate-500">

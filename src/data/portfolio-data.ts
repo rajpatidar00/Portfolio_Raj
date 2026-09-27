@@ -162,7 +162,7 @@ export const PROJECTS: ProjectItem[] = [
     ],
     githubUrl: "https://github.com/rajpatidar00",
     liveUrl: "https://akshar-prod.vercel.app/",
-    image: "/projects/school-erp.svg",
+    image: "/projects/akshar.png",
     isPlaceholder: false,
   },
   {
@@ -217,7 +217,7 @@ export const PROJECTS: ProjectItem[] = [
     ],
     githubUrl: "https://github.com/rajpatidar00",
     liveUrl: "https://example.com/component-system",
-    image: "/projects/component-system.svg",
+    image: "/projects/componentSys.png",
     isPlaceholder: true,
   },
 ];
