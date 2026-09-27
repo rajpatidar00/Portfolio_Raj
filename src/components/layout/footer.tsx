@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowUp, Mail, Heart } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import { PERSONAL_INFO, SOCIAL_LINKS } from "@/data/portfolio-data";
+import Image from "next/image";   
 
 export function Footer() {
   const scrollToTop = () => {
@@ -18,12 +19,12 @@ export function Footer() {
     <footer className="border-t border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-950/50 py-12 transition-colors">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          
+
           {/* Brand & Title */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-1">
             <div className="flex items-center gap-2">
               <span className="flex h-6 w-6 items-center justify-center rounded-md bg-blue-600 text-white font-mono text-[10px] font-bold">
-                RP
+                <Image src="/projects/dp.png" alt="Logo" width={32} height={32} className="rounded-lg" />
               </span>
               <span className="text-base font-bold text-slate-900 dark:text-white tracking-tight">
                 {PERSONAL_INFO.name}

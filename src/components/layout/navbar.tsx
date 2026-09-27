@@ -7,6 +7,7 @@ import { SOCIAL_LINKS, PERSONAL_INFO } from "@/data/portfolio-data";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const NAV_ITEMS = [
   { label: "About", href: "#about" },
@@ -47,7 +48,7 @@ export function Navbar() {
           className="group flex items-center gap-2.5 text-slate-900 dark:text-white font-semibold text-lg tracking-tight focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-md"
         >
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 text-white font-mono text-xs font-bold shadow-xs group-hover:scale-105 transition-transform">
-            RP
+            <Image src="/projects/dp.png" alt="Logo" width={32} height={32} className="rounded-lg" />
           </span>
           <div className="flex flex-col">
             <span className="leading-tight font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
