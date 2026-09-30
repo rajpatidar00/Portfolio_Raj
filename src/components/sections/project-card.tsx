@@ -114,28 +114,32 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
           <div className="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap items-center justify-between gap-3">
             <div className="flex items-center gap-3">
               {/* GitHub Button */}
-              <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors shadow-xs cursor-pointer"
-                title="View Code Repository"
-              >
-                <GithubIcon className="h-3.5 w-3.5" />
-                GitHub
-              </a>
+              {project.githubUrl && (
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors shadow-xs cursor-pointer"
+                  title="View Code Repository"
+                >
+                  <GithubIcon className="h-3.5 w-3.5" />
+                  GitHub
+                </a>
+              )}
 
               {/* Live Demo Button */}
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-xs shadow-blue-500/10 cursor-pointer"
-                title="Open Live Application"
-              >
-                <ExternalLink className="h-3.5 w-3.5" />
-                Live Demo
-              </a>
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 transition-colors shadow-xs shadow-blue-500/10 cursor-pointer"
+                  title="Open Live Application"
+                >
+                  <ExternalLink className="h-3.5 w-3.5" />
+                  Live Demo
+                </a>
+              )}
             </div>
 
             <span className="text-[11px] font-mono text-slate-400 dark:text-slate-500">

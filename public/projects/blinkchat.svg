@@ -1,0 +1,184 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="500" rx="16" fill="#0B0F19" />
+  
+  <defs>
+    <!-- Background Grid -->
+    <pattern id="grid-chat" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#1E293B" stroke-width="0.8" opacity="0.4" />
+    </pattern>
+
+    <!-- Gradients -->
+    <linearGradient id="chat-glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.08" />
+    </linearGradient>
+
+    <linearGradient id="msg-sent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#1D4ED8" />
+    </linearGradient>
+
+    <linearGradient id="msg-recv" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#162032" />
+    </linearGradient>
+
+    <linearGradient id="sidebar-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#0C1322" />
+    </linearGradient>
+
+    <linearGradient id="badge-ws" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="16" fill="url(#grid-chat)" />
+
+  <!-- App Window Frame -->
+  <rect x="24" y="24" width="752" height="452" rx="12" fill="#0F172A" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- Window Header / Title Bar -->
+  <circle cx="50" cy="46" r="5" fill="#EF4444" opacity="0.85" />
+  <circle cx="66" cy="46" r="5" fill="#F59E0B" opacity="0.85" />
+  <circle cx="82" cy="46" r="5" fill="#10B981" opacity="0.85" />
+
+  <!-- URL Address pill -->
+  <rect x="120" y="36" width="220" height="20" rx="6" fill="#1E293B" stroke="#334155" stroke-width="0.8" />
+  <text x="134" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#94A3B8" font-weight="500">blinkchat.app / direct-room</text>
+
+  <!-- WebSocket Status Badge -->
+  <rect x="520" y="36" width="132" height="20" rx="10" fill="url(#badge-ws)" stroke="#10B981" stroke-width="0.7" stroke-opacity="0.4" />
+  <circle cx="532" cy="46" r="3.5" fill="#10B981" />
+  <text x="542" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#34D399" font-weight="600">WebSocket: Connected</text>
+
+  <!-- Persistent Auth Badge -->
+  <rect x="660" y="36" width="102" height="20" rx="10" fill="#1E293B" stroke="#3B82F6" stroke-width="0.7" stroke-opacity="0.3" />
+  <circle cx="672" cy="46" r="3" fill="#60A5FA" />
+  <text x="682" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#93C5FD" font-weight="500">Auth: Active</text>
+
+  <line x1="25" y1="68" x2="775" y2="68" stroke="#1E293B" stroke-width="1" />
+
+  <!-- ================= SIDEBAR ================= -->
+  <rect x="25" y="69" width="230" height="406" fill="url(#sidebar-grad)" />
+  <line x1="255" y1="69" x2="255" y2="475" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Sidebar Header / Brand -->
+  <g transform="translate(42, 88)">
+    <rect width="24" height="24" rx="6" fill="#3B82F6" />
+    <path d="M7 12L11 8L10 12L17 12L13 16L14 12H7Z" fill="white" />
+    <text x="32" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#F8FAFC" font-weight="700" letter-spacing="-0.3">BlinkChat</text>
+  </g>
+
+  <!-- Search Input -->
+  <rect x="40" y="126" width="200" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="0.8" />
+  <text x="52" y="145" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" fill="#64748B">🔍 Search conversations...</text>
+
+  <!-- Sidebar List Items -->
+  <!-- Item 1 (Active) -->
+  <rect x="36" y="168" width="208" height="58" rx="8" fill="#1E293B" stroke="#3B82F6" stroke-width="1" />
+  <circle cx="60" cy="197" r="15" fill="#3B82F6" />
+  <text x="54" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" font-weight="700">AR</text>
+  <circle cx="72" cy="208" r="4" fill="#10B981" stroke="#0F172A" stroke-width="1.5" />
+  <text x="82" y="192" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#F8FAFC" font-weight="600">Alex Rivera</text>
+  <text x="198" y="192" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#94A3B8">10:14 AM</text>
+  <text x="82" y="209" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#93C5FD">WebSocket updates live! 🚀</text>
+
+  <!-- Item 2 -->
+  <rect x="36" y="234" width="208" height="54" rx="8" fill="transparent" />
+  <circle cx="60" cy="261" r="15" fill="#6366F1" />
+  <text x="54" y="266" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" font-weight="700">SC</text>
+  <circle cx="72" cy="272" r="4" fill="#10B981" stroke="#0F172A" stroke-width="1.5" />
+  <text x="82" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#E2E8F0" font-weight="500">Sarah Chen</text>
+  <text x="200" y="256" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748B">09:48</text>
+  <text x="82" y="273" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748B">Session survives refresh...</text>
+
+  <!-- Item 3 -->
+  <rect x="36" y="296" width="208" height="54" rx="8" fill="transparent" />
+  <circle cx="60" cy="323" r="15" fill="#8B5CF6" />
+  <text x="53" y="328" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" font-weight="700">DT</text>
+  <text x="82" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#CBD5E1" font-weight="500">Dev Team</text>
+  <text x="194" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748B">Yesterday</text>
+  <text x="82" y="335" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748B">Component separation v2</text>
+
+  <!-- Item 4 -->
+  <rect x="36" y="358" width="208" height="54" rx="8" fill="transparent" />
+  <circle cx="60" cy="385" r="15" fill="#475569" />
+  <text x="53" y="390" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" font-weight="700">MV</text>
+  <text x="82" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" fill="#94A3B8" font-weight="500">Marcus Vance</text>
+  <text x="202" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748B">Jun 12</text>
+  <text x="82" y="397" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#64748B">Responsive testing ready</text>
+
+  <!-- ================= MAIN CHAT AREA ================= -->
+  <!-- Chat Area Header -->
+  <rect x="256" y="69" width="519" height="54" fill="#0F172A" />
+  <line x1="256" y1="123" x2="775" y2="123" stroke="#1E293B" stroke-width="1" />
+
+  <circle cx="284" cy="96" r="15" fill="#3B82F6" />
+  <text x="278" y="101" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#FFFFFF" font-weight="700">AR</text>
+  <circle cx="295" cy="106" r="4" fill="#10B981" stroke="#0F172A" stroke-width="1.5" />
+
+  <text x="308" y="92" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#F8FAFC" font-weight="600">Alex Rivera</text>
+  <text x="308" y="107" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#34D399">● Online • Real-time socket stream connected</text>
+
+  <!-- Call & Options Icons (Mock) -->
+  <rect x="680" y="85" width="28" height="28" rx="6" fill="#1E293B" stroke="#334155" stroke-width="0.8" />
+  <text x="688" y="103" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">📞</text>
+
+  <rect x="716" y="85" width="28" height="28" rx="6" fill="#1E293B" stroke="#334155" stroke-width="0.8" />
+  <text x="724" y="103" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#94A3B8">🎥</text>
+
+  <!-- Chat Timeline Badge -->
+  <rect x="475" y="134" width="80" height="18" rx="9" fill="#1E293B" />
+  <text x="494" y="147" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#64748B" font-weight="600">TODAY</text>
+
+  <!-- Message 1 (Received from Alex) -->
+  <g transform="translate(276, 160)">
+    <rect width="330" height="48" rx="10" fill="url(#msg-recv)" stroke="#334155" stroke-width="0.7" />
+    <text x="14" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E2E8F0">Does the persistent auth survive browser reload?</text>
+    <text x="14" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E2E8F0">Testing without repeating login steps.</text>
+    <text x="285" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#64748B">10:12</text>
+  </g>
+
+  <!-- Message 2 (Sent by Raj / User) -->
+  <g transform="translate(425, 218)">
+    <rect width="324" height="48" rx="10" fill="url(#msg-sent)" />
+    <text x="14" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#FFFFFF">Yes! Session tokens persist across refreshes,</text>
+    <text x="14" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#FFFFFF">keeping users logged in seamlessly.</text>
+    <text x="274" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#93C5FD">10:13</text>
+    <text x="303" y="38" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#67E8F9">✓✓</text>
+  </g>
+
+  <!-- Message 3 (Received from Alex) -->
+  <g transform="translate(276, 276)">
+    <rect width="310" height="34" rx="10" fill="url(#msg-recv)" stroke="#334155" stroke-width="0.7" />
+    <text x="14" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#E2E8F0">And instant message updates with zero reload?</text>
+    <text x="268" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#64748B">10:14</text>
+  </g>
+
+  <!-- Message 4 (Sent by Raj / User) -->
+  <g transform="translate(400, 320)">
+    <rect width="349" height="52" rx="10" fill="url(#msg-sent)" />
+    <text x="14" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#FFFFFF">WebSockets deliver real-time 1-on-1 updates</text>
+    <text x="14" y="37" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#FFFFFF">instantly. Modular UI + mobile responsive!</text>
+    <text x="298" y="37" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" fill="#93C5FD">10:14</text>
+    <text x="328" y="37" font-family="system-ui, -apple-system, sans-serif" font-size="9" fill="#67E8F9">✓✓</text>
+  </g>
+
+  <!-- ================= INPUT BAR ================= -->
+  <rect x="256" y="415" width="519" height="60" fill="#0B1120" />
+  <line x1="256" y1="415" x2="775" y2="415" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Plus / Attachment button -->
+  <circle cx="286" cy="445" r="14" fill="#1E293B" stroke="#334155" stroke-width="0.8" />
+  <text x="281" y="449" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#94A3B8">+</text>
+
+  <!-- Message input field -->
+  <rect x="312" y="429" width="395" height="34" rx="17" fill="#161F33" stroke="#334155" stroke-width="0.8" />
+  <text x="328" y="450" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#64748B">Type a message... (Instant live WebSocket sync)</text>
+
+  <!-- Send button -->
+  <circle cx="738" cy="446" r="15" fill="#2563EB" />
+  <path d="M733 441L746 446L733 451L735 446L733 441Z" fill="white" />
+</svg>
